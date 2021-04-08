@@ -24,6 +24,12 @@ unction SearchBar({setInput}) {
             <div className="funnel_container" onClick={() => setIsShown(!false)}>
                 <FontAwesomeIcon icon={faFilter} className="filter_icon"></FontAwesomeIcon>
             </div>
+            <button type="button" className="btn_searchBar" onClick={() => getInput(input)} aria-label="search button">
+            <FontAwesomeIcon icon={faSearch} className="search_icon"></FontAwesomeIcon>search
+            </button>
+        </section>
+
+        {isShown && <PopUpMobile/>}
       </>
 
 )
